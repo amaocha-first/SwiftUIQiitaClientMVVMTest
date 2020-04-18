@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4224498644006A89FF /* AppDelegate.swift */; };
 		CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4424498644006A89FF /* SceneDelegate.swift */; };
-		CC79BF4724498644006A89FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4624498644006A89FF /* ContentView.swift */; };
+		CC79BF4724498644006A89FF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4624498644006A89FF /* SearchView.swift */; };
 		CC79BF4924498646006A89FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4824498646006A89FF /* Assets.xcassets */; };
 		CC79BF4C24498646006A89FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4B24498646006A89FF /* Preview Assets.xcassets */; };
 		CC79BF4F24498646006A89FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4D24498646006A89FF /* LaunchScreen.storyboard */; };
+		CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF582449A208006A89FF /* SearchViewModel.swift */; };
+		CC79BF632449AD56006A89FF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF622449AD56006A89FF /* APIClient.swift */; };
+		CC79BF67244A6A64006A89FF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF66244A6A64006A89FF /* APIError.swift */; };
+		CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF69244A6C38006A89FF /* QiitaResponses.swift */; };
+		CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */; };
+		CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF70244A9220006A89FF /* HTTPMethod.swift */; };
+		CC79BF73244A9233006A89FF /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF72244A9233006A89FF /* APICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC79BF3F24498644006A89FF /* SwiftUIQiitaClientMVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIQiitaClientMVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC79BF4224498644006A89FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC79BF4424498644006A89FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC79BF4624498644006A89FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC79BF4624498644006A89FF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		CC79BF4824498646006A89FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC79BF4B24498646006A89FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC79BF4E24498646006A89FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC79BF5024498646006A89FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC79BF582449A208006A89FF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
+		CC79BF622449AD56006A89FF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CC79BF66244A6A64006A89FF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CC79BF69244A6C38006A89FF /* QiitaResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaResponses.swift; sourceTree = "<group>"; };
+		CC79BF70244A9220006A89FF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CC79BF72244A9233006A89FF /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +70,16 @@
 		CC79BF4124498644006A89FF /* SwiftUIQiitaClientMVVMTest */ = {
 			isa = PBXGroup;
 			children = (
+				CC79BF5F2449ACDA006A89FF /* Utilities */,
+				CC79BF5C2449A62A006A89FF /* Repositories */,
+				CC79BF5A2449A53E006A89FF /* UI */,
 				CC79BF4224498644006A89FF /* AppDelegate.swift */,
 				CC79BF4424498644006A89FF /* SceneDelegate.swift */,
-				CC79BF4624498644006A89FF /* ContentView.swift */,
 				CC79BF4824498646006A89FF /* Assets.xcassets */,
 				CC79BF4D24498646006A89FF /* LaunchScreen.storyboard */,
 				CC79BF5024498646006A89FF /* Info.plist */,
 				CC79BF4A24498646006A89FF /* Preview Content */,
+				CC79BF582449A208006A89FF /* SearchViewModel.swift */,
 			);
 			path = SwiftUIQiitaClientMVVMTest;
 			sourceTree = "<group>";
@@ -73,6 +90,50 @@
 				CC79BF4B24498646006A89FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC79BF5A2449A53E006A89FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CC79BF5B2449A545006A89FF /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CC79BF5B2449A545006A89FF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CC79BF4624498644006A89FF /* SearchView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CC79BF5C2449A62A006A89FF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CC79BF68244A6C1F006A89FF /* QiitaAPI */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CC79BF5F2449ACDA006A89FF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC79BF622449AD56006A89FF /* APIClient.swift */,
+				CC79BF66244A6A64006A89FF /* APIError.swift */,
+				CC79BF70244A9220006A89FF /* HTTPMethod.swift */,
+				CC79BF72244A9233006A89FF /* APICall.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CC79BF68244A6C1F006A89FF /* QiitaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */,
+				CC79BF69244A6C38006A89FF /* QiitaResponses.swift */,
+			);
+			path = QiitaAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +209,14 @@
 			files = (
 				CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */,
 				CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */,
-				CC79BF4724498644006A89FF /* ContentView.swift in Sources */,
+				CC79BF73244A9233006A89FF /* APICall.swift in Sources */,
+				CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */,
+				CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */,
+				CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */,
+				CC79BF4724498644006A89FF /* SearchView.swift in Sources */,
+				CC79BF632449AD56006A89FF /* APIClient.swift in Sources */,
+				CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */,
+				CC79BF67244A6A64006A89FF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
