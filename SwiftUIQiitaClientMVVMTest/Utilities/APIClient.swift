@@ -23,12 +23,24 @@ extension APIClient {
                 .network(description: error.localizedDescription)
             }
             .flatMap(maxPublishers: .max(1)) { pair in
-                decode(pair.data)
+                self.decode(pair.data)
             }
             .eraseToAnyPublisher()
         } catch {
             let apiError = error as! APIError
             return Fail(error: apiError).eraseToAnyPublisher()
         }
+    }
+    
+    private func decode<T: Decodable>(_ data: Data) -> AnyPublisher<T, APIError> {
+      let decoder = JSONDecoder()
+      decoder.dateDecodingStrategy = .secondsSince1970
+
+      return Just(data)
+        .decode(type: T.self, decoder: decoder)
+        .mapError { error in
+          .parsing(description: error.localizedDescription)
+        }
+        .eraseToAnyPublisher()
     }
 }

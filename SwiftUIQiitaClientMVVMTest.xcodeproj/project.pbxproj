@@ -15,7 +15,6 @@
 		CC79BF4F24498646006A89FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4D24498646006A89FF /* LaunchScreen.storyboard */; };
 		CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF582449A208006A89FF /* SearchViewModel.swift */; };
 		CC79BF632449AD56006A89FF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF622449AD56006A89FF /* APIClient.swift */; };
-		CC79BF65244A6A15006A89FF /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF64244A6A15006A89FF /* Parsing.swift */; };
 		CC79BF67244A6A64006A89FF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF66244A6A64006A89FF /* APIError.swift */; };
 		CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF69244A6C38006A89FF /* QiitaResponses.swift */; };
 		CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */; };
@@ -35,7 +34,6 @@
 		CC79BF582449A208006A89FF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
 		CC79BF622449AD56006A89FF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		CC79BF64244A6A15006A89FF /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		CC79BF66244A6A64006A89FF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CC79BF69244A6C38006A89FF /* QiitaResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaResponses.swift; sourceTree = "<group>"; };
 		CC79BF70244A9220006A89FF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		CC79BF5F2449ACDA006A89FF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CC79BF64244A6A15006A89FF /* Parsing.swift */,
 				CC79BF622449AD56006A89FF /* APIClient.swift */,
 				CC79BF66244A6A64006A89FF /* APIError.swift */,
 				CC79BF70244A9220006A89FF /* HTTPMethod.swift */,
@@ -212,7 +209,6 @@
 			files = (
 				CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */,
 				CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */,
-				CC79BF65244A6A15006A89FF /* Parsing.swift in Sources */,
 				CC79BF73244A9233006A89FF /* APICall.swift in Sources */,
 				CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */,
 				CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */,
