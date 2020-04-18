@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4224498644006A89FF /* AppDelegate.swift */; };
 		CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4424498644006A89FF /* SceneDelegate.swift */; };
-		CC79BF4724498644006A89FF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4624498644006A89FF /* SearchView.swift */; };
 		CC79BF4924498646006A89FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4824498646006A89FF /* Assets.xcassets */; };
 		CC79BF4C24498646006A89FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4B24498646006A89FF /* Preview Assets.xcassets */; };
 		CC79BF4F24498646006A89FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC79BF4D24498646006A89FF /* LaunchScreen.storyboard */; };
-		CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF582449A208006A89FF /* SearchViewModel.swift */; };
-		CC79BF632449AD56006A89FF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF622449AD56006A89FF /* APIClient.swift */; };
 		CC79BF67244A6A64006A89FF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF66244A6A64006A89FF /* APIError.swift */; };
 		CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF69244A6C38006A89FF /* QiitaResponses.swift */; };
 		CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */; };
 		CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF70244A9220006A89FF /* HTTPMethod.swift */; };
 		CC79BF73244A9233006A89FF /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF72244A9233006A89FF /* APICall.swift */; };
+		CC79BF79244A9888006A89FF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF582449A208006A89FF /* SearchViewModel.swift */; };
+		CC79BF7A244A9A2F006A89FF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4624498644006A89FF /* SearchView.swift */; };
+		CC79BF7B244A9D6F006A89FF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF622449AD56006A89FF /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +70,7 @@
 		CC79BF4124498644006A89FF /* SwiftUIQiitaClientMVVMTest */ = {
 			isa = PBXGroup;
 			children = (
+				CC79BF5024498646006A89FF /* Info.plist */,
 				CC79BF78244A97C6006A89FF /* Supporting Files */,
 				CC79BF5F2449ACDA006A89FF /* Utilities */,
 				CC79BF5C2449A62A006A89FF /* Repositories */,
@@ -147,7 +148,6 @@
 				CC79BF4424498644006A89FF /* SceneDelegate.swift */,
 				CC79BF4824498646006A89FF /* Assets.xcassets */,
 				CC79BF4D24498646006A89FF /* LaunchScreen.storyboard */,
-				CC79BF5024498646006A89FF /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,14 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC79BF7A244A9A2F006A89FF /* SearchView.swift in Sources */,
 				CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */,
 				CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */,
+				CC79BF7B244A9D6F006A89FF /* APIClient.swift in Sources */,
 				CC79BF73244A9233006A89FF /* APICall.swift in Sources */,
 				CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */,
 				CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */,
-				CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */,
-				CC79BF4724498644006A89FF /* SearchView.swift in Sources */,
-				CC79BF632449AD56006A89FF /* APIClient.swift in Sources */,
+				CC79BF79244A9888006A89FF /* SearchViewModel.swift in Sources */,
 				CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */,
 				CC79BF67244A6A64006A89FF /* APIError.swift in Sources */,
 			);

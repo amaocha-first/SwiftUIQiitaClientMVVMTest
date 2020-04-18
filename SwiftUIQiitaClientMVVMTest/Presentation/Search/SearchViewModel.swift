@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 
 class SearchViewModel: ObservableObject {
-    private let disposables = [AnyCancellable]()
+    private var disposables = [AnyCancellable]()
     
     //input
     @Published var searchText: String = ""
@@ -18,15 +18,19 @@ class SearchViewModel: ObservableObject {
     @Published var articles = []
     
     init() {
-        let _fetchArticles = PassthroughSubject<String, Never>()
-        
-        $searchText
-            .filter { !$0.isEmpty }
-            .debounce(for: .seconds(0.5), scheduler: DispatchQueue(label: "SearchViewModel"))
-            .sink(receiveValue: { _fetchRepositories.send($0)})
-            .store(in: &disposables)
-        
-        _fetchArticles
-            .map { repositoryName -> AnyPublisher<Result<[DailyWeatherRowViewModel], WeatherError>, Never> in }
+        let repo = QiitaRepositoryImpl()
+        repo.fetchArticles()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { (result) in
+                switch result {
+                case .finished:
+                    print("finished")
+                case .failure(let error):
+                    print("eeeeeeeeeeeeeee:\(error)")
+                }
+            }) { (articles) in
+                print("aaaaaaaaaaaaaaaaaaa:\(articles)")
+        }
+        .store(in: &disposables)
     }
 }

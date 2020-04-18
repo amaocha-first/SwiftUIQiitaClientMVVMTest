@@ -13,6 +13,8 @@ struct SearchView: View {
     @State private var searchText : String = ""
     @State private var text = ""
     
+    @ObservedObject var viewModel = SearchViewModel()
+    
     var body: some View {
         NavigationView {
             List {
