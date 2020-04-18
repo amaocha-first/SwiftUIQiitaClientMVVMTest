@@ -28,3 +28,11 @@ struct ArticleRow: View {
         .padding(.trailing)
     }
 }
+
+#if DEBUG
+struct ArticleRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ArticleRow(article: Article.mockedData)
+    }
+}
+#endif

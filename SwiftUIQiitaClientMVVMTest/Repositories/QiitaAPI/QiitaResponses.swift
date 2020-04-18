@@ -22,3 +22,14 @@ struct User: Codable, Hashable {
     let followees_count: Int
     let followers_count: Int
 }
+
+#if DEBUG
+extension Article {
+    static let mockedData: Article = Article(id: "asdhfj;",
+                                             title: "記事タイトル",
+                                             user: User(id: "asdfhjkl", name: "Jhon", followees_count: 10, followers_count: 20),
+                                             body: "body",
+                                             likes_count: 20
+    )
+}
+#endif
