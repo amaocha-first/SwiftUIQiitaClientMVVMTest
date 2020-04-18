@@ -19,6 +19,8 @@
 		CC79BF67244A6A64006A89FF /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF66244A6A64006A89FF /* APIError.swift */; };
 		CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF69244A6C38006A89FF /* QiitaResponses.swift */; };
 		CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF5D2449A65F006A89FF /* QiitaRepository.swift */; };
+		CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF70244A9220006A89FF /* HTTPMethod.swift */; };
+		CC79BF73244A9233006A89FF /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF72244A9233006A89FF /* APICall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CC79BF64244A6A15006A89FF /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		CC79BF66244A6A64006A89FF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CC79BF69244A6C38006A89FF /* QiitaResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaResponses.swift; sourceTree = "<group>"; };
+		CC79BF70244A9220006A89FF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CC79BF72244A9233006A89FF /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				CC79BF64244A6A15006A89FF /* Parsing.swift */,
 				CC79BF622449AD56006A89FF /* APIClient.swift */,
 				CC79BF66244A6A64006A89FF /* APIError.swift */,
+				CC79BF70244A9220006A89FF /* HTTPMethod.swift */,
+				CC79BF72244A9233006A89FF /* APICall.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -207,11 +213,13 @@
 				CC79BF4324498644006A89FF /* AppDelegate.swift in Sources */,
 				CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */,
 				CC79BF65244A6A15006A89FF /* Parsing.swift in Sources */,
+				CC79BF73244A9233006A89FF /* APICall.swift in Sources */,
 				CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */,
 				CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */,
 				CC79BF592449A208006A89FF /* SearchViewModel.swift in Sources */,
 				CC79BF4724498644006A89FF /* SearchView.swift in Sources */,
 				CC79BF632449AD56006A89FF /* APIClient.swift in Sources */,
+				CC79BF71244A9220006A89FF /* HTTPMethod.swift in Sources */,
 				CC79BF67244A6A64006A89FF /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
