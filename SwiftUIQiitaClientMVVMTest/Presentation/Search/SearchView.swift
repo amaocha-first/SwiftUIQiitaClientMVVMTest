@@ -9,20 +9,17 @@
 import SwiftUI
 
 struct SearchView: View {
-    let cars = ["Subaru WRX", "Tesla Model 3", "Porsche 911", "Renault Zoe", "DeLorean"]
-    @State private var searchText : String = ""
     @State private var text = ""
-    
-    @ObservedObject var viewModel = SearchViewModel()
+    @ObservedObject var searchViewModel = SearchViewModel()
     
     var body: some View {
         NavigationView {
             List {
                 searchField
-                ForEach(self.cars, id: \.self) { car in
-                    Text(car)
+                ForEach(self.searchViewModel.articles, id: \.self) { article in
+                    ArticleRow(article: article)
                 }
-            }.navigationBarTitle(Text("Search Repository"))
+            }.navigationBarTitle(Text("Search Qiita Articles"))
         }
     }
 }

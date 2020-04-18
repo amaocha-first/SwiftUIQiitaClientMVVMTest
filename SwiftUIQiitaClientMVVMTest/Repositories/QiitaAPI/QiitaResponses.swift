@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Article: Codable {
+struct Article: Codable, Hashable, Identifiable {
     let id: String
     let title: String
     let user: User
@@ -16,7 +16,8 @@ struct Article: Codable {
     let likes_count: Int
 }
 
-struct User: Codable {
+struct User: Codable, Hashable {
+    let id: String
     let name: String
     let followees_count: Int
     let followers_count: Int

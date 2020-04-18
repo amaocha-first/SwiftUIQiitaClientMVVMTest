@@ -9,27 +9,35 @@
 import SwiftUI
 import Combine
 
-class SearchViewModel: ObservableObject {
+final class SearchViewModel: ObservableObject {
     private var disposables = [AnyCancellable]()
     
     //input
     @Published var searchText: String = ""
     //output
-    @Published var articles = []
+    @Published var articles: [Article] = []
+    
+    private let qiitaRepository = QiitaRepositoryImpl()
     
     init() {
-        let repo = QiitaRepositoryImpl()
-        repo.fetchArticles()
+        fetchArticles()
+    }
+    
+    //初回記事一覧を取得
+    private func fetchArticles() {
+        qiitaRepository.fetchArticles()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { (result) in
                 switch result {
                 case .finished:
                     print("finished")
                 case .failure(let error):
-                    print("eeeeeeeeeeeeeee:\(error)")
+                    print("error:\(error)")
                 }
-            }) { (articles) in
-                print("aaaaaaaaaaaaaaaaaaa:\(articles)")
+            }) {[weak self] (articles) in
+                guard let self = self else { return }
+                self.articles = articles
+                
         }
         .store(in: &disposables)
     }

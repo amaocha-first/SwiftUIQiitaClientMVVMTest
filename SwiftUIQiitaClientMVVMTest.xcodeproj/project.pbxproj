@@ -20,6 +20,7 @@
 		CC79BF79244A9888006A89FF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF582449A208006A89FF /* SearchViewModel.swift */; };
 		CC79BF7A244A9A2F006A89FF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF4624498644006A89FF /* SearchView.swift */; };
 		CC79BF7B244A9D6F006A89FF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF622449AD56006A89FF /* APIClient.swift */; };
+		CC79BF7D244AA6B6006A89FF /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79BF7C244AA6B6006A89FF /* ArticleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CC79BF69244A6C38006A89FF /* QiitaResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaResponses.swift; sourceTree = "<group>"; };
 		CC79BF70244A9220006A89FF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		CC79BF72244A9233006A89FF /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		CC79BF7C244AA6B6006A89FF /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				CC79BF582449A208006A89FF /* SearchViewModel.swift */,
 				CC79BF4624498644006A89FF /* SearchView.swift */,
+				CC79BF7C244AA6B6006A89FF /* ArticleRow.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				CC79BF4524498644006A89FF /* SceneDelegate.swift in Sources */,
 				CC79BF7B244A9D6F006A89FF /* APIClient.swift in Sources */,
 				CC79BF73244A9233006A89FF /* APICall.swift in Sources */,
+				CC79BF7D244AA6B6006A89FF /* ArticleRow.swift in Sources */,
 				CC79BF6A244A6C38006A89FF /* QiitaResponses.swift in Sources */,
 				CC79BF6B244A6EFC006A89FF /* QiitaRepository.swift in Sources */,
 				CC79BF79244A9888006A89FF /* SearchViewModel.swift in Sources */,
